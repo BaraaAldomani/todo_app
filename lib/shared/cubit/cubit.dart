@@ -47,7 +47,7 @@ class AppCubit extends Cubit<AppStates> {
             .execute(
                 'CREATE TABLE task (id INTEGER PRIMARY KEY, title TEXT, date TEXT, time TEXT, status TEXT)')
             .then((value) {
-          print('table created');
+          print('table create');
         }).catchError((error) {
           print('error was ${error.toString()}');
         });
